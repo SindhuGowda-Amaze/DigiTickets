@@ -316,8 +316,29 @@ input {
   cursor: pointer;
   font-weight: bold;
   background-color: #3247D5;
-  width: 105%;
+ /* width: 105%;*/
+ width: 62px;
+ height: 25px;
 }
+
+.EditBTN{
+  background-color: #3247d5;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    width: 65%;
+    border: transparent;
+    font-family: Poppines;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: .5px;
+    margin-left: 25px;
+}
+
+
 
 .ApplyBTN {
   color: white;
