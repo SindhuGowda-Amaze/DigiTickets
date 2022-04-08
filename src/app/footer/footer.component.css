@@ -1,0 +1,17 @@
+.Text{
+    text-align: center;
+    color: black;
+    margin-left: 90px;
+}
+
+.container-fluid{
+    width: 100%;
+    padding: 15px;
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+font-weight:bold;
+
+height: 20px;
+}
+
