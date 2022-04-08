@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-10">
-            <p class="Heading1">Open Tickets</p>
+            <p class="Heading1">Closed Tickets</p>
       
         </div>
         <div class="col-lg-2">
@@ -48,8 +48,10 @@
                             <th>Raised By</th>
                             <th>Customer Phone No</th>
                             <th>Description</th>
+                            <th>Resolved By</th>
+                            <th>Resolve Comments</th>
                             <th>Status</th>
-                            <th style="padding-left: 47px;">Actions</th>
+                            <!-- <th style="padding-left: 47px;">Actions</th> -->
                         <tr>
                     </thead>
                     <tbody>
@@ -63,11 +65,12 @@
                           <td>Ram</td>
                           <td>9560070443</td>
                           <td>Request for proper road Topping</td>
-                          
-                          <td>Open</td>
-                          <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Accept</button><br><br>
-                            <button class="DeleteBTN" >Reject</button>
-                        </td>
+                          <td>Maxwell</td>
+                          <td>The issue has been taken care</td>
+                          <td>Closed</td>
+                          <!-- <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Resolved</button><br><br>
+                            <button class="DeleteBTN"  data-toggle="modal" data-target="#exampleModal1">Queries</button>
+                        </td> -->
                       </tr>
                     </tbody>
                 </table>
@@ -81,7 +84,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Assign Agents</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Comments</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -89,26 +92,50 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-lg-4">
-                        <p>Agents</p>
+                        <p>Comments </p>
                     </div>
                     <div class="col-lg-6">
-                        <Select class="form-control">
-                            <option>Pramodh</option>
-                            <option>Krishna</option>
-                            <option>Rakesh</option>
-                            <option>Peter</option>
-                            <option>Mohamadh</option>
-                            <option>Zahir</option>
-                        </Select>
+                       <textarea class="form-control" rows="5">write here..</textarea>
                     </div>
                 </div><br>
-               
-               
-        
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" >Assign Agent</button>
+                <button type="button" class="btn btn-primary" >Resolve Ticket</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Queries</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Pre-made Reply</p>
+                    </div>
+                    <div class="col-lg-6">
+                       <select class="form-control">
+                           <option>Select One</option>
+                           <option>Provide your Contact Number</option>
+                           <option>Provoid your Address</option>
+                           <option>Provide your Locality Details</option>
+                           <option>Provide more Information</option>
+                       </select>
+                    </div>
+                </div><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" >Send</button>
             </div>
         </div>
     </div>

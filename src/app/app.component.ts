@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { interval } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,9 +23,26 @@ export class AppComponent {
   username: any;
   officelogo: any;
   CompanyConfiguration: any;
-  temp1: any;
-  ngOnInit(): void {}
+  temp1: any;loginname:any;
+  ngOnInit(): void {
+    interval(1000).subscribe((x => {
+      this.pagename = localStorage.getItem('Pagename')
+      this.loginname = localStorage.getItem('loginname')
+    }));
 
+    setInterval(() => {
+      var time = new Date();
+      this.time = time.toLocaleString('en-US', { hour: '2-digit', minute: 'numeric', hour12: true });
+      let temp: any = this.time.split(':');
+      this.hh = temp[0];
+      let temp1: any = this.time.split(':')[1].split(" ");
+      this.mm = temp1[0];
+      this.ampm = temp1[1];
+    }, 1000);
+  }
+
+
+  
   initail: any
   notificationslist: any
 

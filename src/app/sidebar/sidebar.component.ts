@@ -94,25 +94,32 @@ export class SidebarComponent implements OnInit {
     this.router.navigate(['/LeaveDetailsupload']);
   }
 
-  public ReturnEquipment() {
+  public report() {
     debugger
-    this.active = 100;
-    localStorage.setItem('clickname', 'Return Equipments')
-    this.router.navigate(['/ReturnEquipment']);
+    this.active = 'report';
+    localStorage.setItem('clickname', 'Report')
+    this.router.navigate(['/Reports']);
   }
 
-  public completed() {
+  public helptopic() {
     debugger
-    this.active = 101;
-    localStorage.setItem('clickname', 'Completed')
-    this.router.navigate(['/CompletedIssue']);
+    this.active ='helptopic';
+    localStorage.setItem('clickname', 'Help Topic')
+    this.router.navigate(['/Helptopicdash']);
   }
 
-  public dailyReports() {
+  public premadereply() {
     debugger
-    this.active = 99;
-    localStorage.setItem('clickname', 'Daily Reports')
-    this.router.navigate(['/DailyReports']);
+    this.active = 121;
+    localStorage.setItem('clickname', 'Premade Reply')
+    this.router.navigate(['/Premadereplydash']);
+  }
+
+  public closed() {
+    debugger
+    this.active = 122;
+    localStorage.setItem('clickname', 'Closed Tickets')
+    this.router.navigate(['/ClosedTickets']);
   }
 
   public AgentAcceptedTicket() {

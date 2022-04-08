@@ -14,6 +14,10 @@ import { AgentManagerDashboardComponent } from './agent-manager-dashboard/agent-
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 import { AgentAssignedTicketsDashComponent } from './agent-assigned-tickets-dash/agent-assigned-tickets-dash.component';
 import { AgentAcceptedTicketDashComponent } from './agent-accepted-ticket-dash/agent-accepted-ticket-dash.component';
+import { PremadereplydashComponent } from './premadereplydash/premadereplydash.component';
+import { HelptopicdashComponent } from './helptopicdash/helptopicdash.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ClosedTicketsComponent } from './closed-tickets/closed-tickets.component';
 
 
 @NgModule({
@@ -29,7 +33,11 @@ import { AgentAcceptedTicketDashComponent } from './agent-accepted-ticket-dash/a
     AgentManagerDashboardComponent,
     TicketDetailsComponent,
     AgentAssignedTicketsDashComponent,
-    AgentAcceptedTicketDashComponent
+    AgentAcceptedTicketDashComponent,
+    PremadereplydashComponent,
+    HelptopicdashComponent,
+    ReportsComponent,
+    ClosedTicketsComponent
   ],
   imports: [
     BrowserModule,

@@ -47,26 +47,35 @@
             <span [ngClass]="active == 'AgentAcceptedTicket' ? 'Active1' : 'Active3'">Accepted Tickets</span>
         </a>
 
-        <a (click)="NewInstallation()" (click)="highlight($event)">
+        <a (click)="closed()" (click)="highlight($event)">
             <img src="assets/Images/64/leaves.png"
-                [ngClass]="active != 97 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+                [ngClass]="active != 122 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
             <img src="assets/Images/64 Blue/leaves.png"
-                [ngClass]="active == 97 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
-            <span [ngClass]="active == 97 ? 'Active1' : 'Active3'">Pre-made Reply</span>
+                [ngClass]="active == 122 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+            <span [ngClass]="active == 122 ? 'Active1' : 'Active3'">Closed Tickets</span>
         </a>
-        <a (click)="dailyReports()" (click)="highlight($event)">
+
+        <a (click)="premadereply()" (click)="highlight($event)">
+            <img src="assets/Images/64/leaves.png"
+                [ngClass]="active != 121 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+            <img src="assets/Images/64 Blue/leaves.png"
+                [ngClass]="active == 121 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+            <span [ngClass]="active == 121 ? 'Active1' : 'Active3'">Pre-made Reply</span>
+        </a>
+
+        <a (click)="helptopic()" (click)="highlight($event)">
             <img src="assets/Images/64/Attendance Report.png"
-                [ngClass]="active != 99 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+                [ngClass]="active != 'helptopic' ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
             <img src="assets/Images/64 Blue/Attendance Report.png"
-                [ngClass]="active == 99 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
-            <span [ngClass]="active == 99 ? 'Active1' : 'Active3'">Help Topic</span>
+                [ngClass]="active == 'helptopic' ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+            <span [ngClass]="active == 'helptopic' ? 'Active1' : 'Active3'">Help Topic</span>
         </a>
-        <a (click)="CustomerIssues()" *ngIf="roleid=='2'" (click)="highlight($event)">
+        <a (click)="report()" *ngIf="roleid=='2'" (click)="highlight($event)">
             <img src="assets/Images/64/leave.png"
-                [ngClass]="active != 98 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+                [ngClass]="active != 'report' ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
             <img src="assets/Images/64 Blue/leave.png"
-                [ngClass]="active == 98 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
-            <span [ngClass]="active == 98 ? 'Active1' : 'Active3'">Reports</span>
+                [ngClass]="active == 'report' ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+            <span [ngClass]="active == 'report' ? 'Active1' : 'Active3'">Reports</span>
         </a>
       
     

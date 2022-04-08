@@ -13,17 +13,6 @@
     border-radius: 5px;
   }
   
-  .fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    /* background-image: url("../../../assets/Images/office.2.png"); */
-    background-color: aquamarine;
-  
-  }
   
   .field-icon {
     float: right;
@@ -71,8 +60,11 @@
   }
   
   .inndercard {
-    /* position: absolute; */
-    width: 550px;
+    position: absolute;
+    /* width: 520px;
+    height: 599px; */
+  
+    width: 520px;
     height: 599px;
     background: #FFFFFF;
     border-top-left-radius: 15px;
@@ -85,14 +77,14 @@
   
   .inputclass {
     height: 46px;
-    width: 420px;
-    left: 306px;
+    width: 410px;
+    left: 290px;
     top: 316px;
     border-radius: 5px;
     margin-bottom: 15px;
     border: 2px solid #C7C7C7;
     outline: none;
-    padding-left: 20px;
+  
     Font: 'Poppins';
   
   
@@ -116,15 +108,19 @@
   
   .imgdiv {
     height: 599px;
-    width: 408px;
+    width: 390px;
+    margin-left: 42%;
+  
+  
   }
   
   .maindiv {
     display: flex;
-    justify-content: center;
+    align-content: center;
+    align-items: stretch;
     /* height: 100vh; */
-    margin-top: 5%;
-    
+    margin-top: 4%;
+    margin-left: 17%;
   
   }
   
@@ -282,5 +278,19 @@
   
     -moz-transition: 0.2s ease all;
   
+  }
+  
+  .image{
+    width: 40%;
+    margin-bottom: 5%;
+  }
+  
+  .password{
+    color: #3247D5;
+    margin-left: -224px;
+    margin-top: 18px;
+  }
+  .forgotpassword{
+    color: #3247D5;
   }
   
