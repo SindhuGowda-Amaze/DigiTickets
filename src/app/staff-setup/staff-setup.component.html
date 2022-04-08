@@ -1,1 +1,77 @@
-<p>staff-setup works!</p>
+<div  class="container-fluid">
+    <div  class="row">
+        
+        <div  class="col-lg-10">
+            <p  class="Heading">Staff Setup</p>
+        </div>
+       
+        <div  class="col-lg-2">
+            <p  class="Heading" style="float: right;">Count : 1</p>
+        </div>
+    </div>
+    <div  class="card">
+        <div  class="row">
+            <div  class="col-lg-1">
+                <p >Filter By</p>
+            </div>
+            <div  class="col-lg-3"><select  class="form-control">
+                    <option >Select Country</option>
+                    <option >South Africa</option>
+                    <option >Singapore</option>
+                </select></div>
+            <div  class="col-lg-3"><select  class="form-control">
+                    <option >Select Province</option>
+                    <option >Western Cape</option>
+                    <option >Northern Cape</option>
+                </select></div>
+        </div>
+    </div><br >
+    <div  class="row">
+        <div  class="col-lg-8 View"></div>
+        <div  class="col-lg-2"><button  routerlink="/StaffDetails"
+                class="EditBTN" tabindex="0">Add</button></div>
+    </div><br >
+    <div  class="row" style="width: 1100px; overflow-x: scroll;">
+        <div  class="col-lg-12">
+            <table  id="download" class="table">
+                <thead >
+                    <th >Employee ID</th>
+                    <th >Employee Name</th>
+                    <th >Department</th>
+                    <th >Role</th>
+                    <th >Phone No</th>
+                    <th >Email ID</th>
+                    <th >Address</th>
+                    <th >Postal Code</th>
+                    <th >Country</th>
+                    <th >Province</th>
+                    <th >City</th>
+                    <th >Photo</th>
+                    <th  style="padding-left: 47px;">Actions</th>
+                    <tr ></tr>
+                </thead>
+                <tbody >
+                    <tr >
+                        <td >10001</td>
+                        <td >Prathap</td>
+                        <td >Technical Service</td>
+                        <td >Senior Technician</td>
+                        <td >9897886788</td>
+                        <td >prathap@outlook.in</td>
+                        <td >106/D-19, 29th A Cross Rd, 7th Block</td>
+                        <td >32437</td>
+                        <td >South Africa</td>
+                        <td >Western Cape</td>
+                        <td >Cape Town</td>
+                        <td ><img  src="assets/Images/empPhoto.jpg"
+                                alt="Emp Photo" width="60%" height="30%"></td>
+                        <td >
+                            <label  class="switch"><input
+                                     type="checkbox" checked=""><span 
+                                    class="slider round"></span></label></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
