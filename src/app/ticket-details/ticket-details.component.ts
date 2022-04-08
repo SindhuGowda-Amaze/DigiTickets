@@ -11,5 +11,7 @@ export class TicketDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  delete(){
+    
+  }
 }
