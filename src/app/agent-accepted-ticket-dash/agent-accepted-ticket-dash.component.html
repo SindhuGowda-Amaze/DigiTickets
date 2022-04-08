@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
-            <p class="Heading1">Ticket Details</p>
+            <p class="Heading1">Accepted Tickets</p>
       
         </div>
     </div>
@@ -21,9 +21,9 @@
     <div class="row">
         <div class="col-lg-10 ">         
         </div>
-        <div class="col-lg-2">
+        <!-- <div class="col-lg-2">
             <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Assign All</button>
-        </div>
+        </div> -->
         <!-- <div class="col-lg-2">
             <button class="EditBTN" routerLink="/CustomerReport">Add</button>
         </div> -->
@@ -34,7 +34,7 @@
             <div class="col-lg-12">
                 <table class="table" id="download">
                     <thead>
-                        <th>Select All   <input type="checkbox" class="form control"></th>
+                      
                             <th>Ticket No</th>
                             <th>Date</th>
                             <th>Subject</th>
@@ -50,7 +50,6 @@
                     </thead>
                     <tbody>
                       <tr>
-                          <td><input type="checkbox" class="form control"></td>
                           <td>121</td>
                           <td>2nd April 2022</td>
                           <td>Implementation of Road topping and Tendersure</td>
@@ -62,8 +61,8 @@
                           <td>Request for proper road Topping</td>
                           
                           <td>Open</td>
-                          <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Assign</button><br><br>
-                            <button class="DeleteBTN" (click)="delete()">Delete</button>
+                          <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Resolved</button><br><br>
+                            <button class="DeleteBTN"  data-toggle="modal" data-target="#exampleModal1">Queries</button>
                         </td>
                       </tr>
                     </tbody>
@@ -78,7 +77,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Assign Agents</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Comments</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -86,26 +85,50 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-lg-4">
-                        <p>Agents</p>
+                        <p>Comments </p>
                     </div>
                     <div class="col-lg-6">
-                        <Select class="form-control">
-                            <option>Pramodh</option>
-                            <option>Krishna</option>
-                            <option>Rakesh</option>
-                            <option>Peter</option>
-                            <option>Mohamadh</option>
-                            <option>Zahir</option>
-                        </Select>
+                       <textarea class="form-control" rows="5">write here..</textarea>
                     </div>
                 </div><br>
-               
-               
-        
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" >Assign Agent</button>
+                <button type="button" class="btn btn-primary" >Resolve Ticket</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Queries</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Pre-made Reply</p>
+                    </div>
+                    <div class="col-lg-6">
+                       <select class="form-control">
+                           <option>Select One</option>
+                           <option>Provide your Contact Number</option>
+                           <option>Provoid your Address</option>
+                           <option>Provide your Locality Details</option>
+                           <option>Provide more Information</option>
+                       </select>
+                    </div>
+                </div><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" >Send</button>
             </div>
         </div>
     </div>

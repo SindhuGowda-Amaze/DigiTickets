@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
-            <p class="Heading1">Ticket Details</p>
+            <p class="Heading1">Open Tickets</p>
       
         </div>
     </div>
@@ -21,9 +21,9 @@
     <div class="row">
         <div class="col-lg-10 ">         
         </div>
-        <div class="col-lg-2">
+        <!-- <div class="col-lg-2">
             <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Assign All</button>
-        </div>
+        </div> -->
         <!-- <div class="col-lg-2">
             <button class="EditBTN" routerLink="/CustomerReport">Add</button>
         </div> -->
@@ -34,7 +34,7 @@
             <div class="col-lg-12">
                 <table class="table" id="download">
                     <thead>
-                        <th>Select All   <input type="checkbox" class="form control"></th>
+                      
                             <th>Ticket No</th>
                             <th>Date</th>
                             <th>Subject</th>
@@ -50,7 +50,6 @@
                     </thead>
                     <tbody>
                       <tr>
-                          <td><input type="checkbox" class="form control"></td>
                           <td>121</td>
                           <td>2nd April 2022</td>
                           <td>Implementation of Road topping and Tendersure</td>
@@ -62,8 +61,8 @@
                           <td>Request for proper road Topping</td>
                           
                           <td>Open</td>
-                          <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Assign</button><br><br>
-                            <button class="DeleteBTN" (click)="delete()">Delete</button>
+                          <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Accept</button><br><br>
+                            <button class="DeleteBTN" >Reject</button>
                         </td>
                       </tr>
                     </tbody>

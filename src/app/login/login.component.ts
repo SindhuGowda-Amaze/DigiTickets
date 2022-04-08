@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("roleid", this.roleid)
         localStorage.setItem("loginname", this.username)
 
-        this.router.navigate(['/CompanySetup']).then(() => {
+        this.router.navigate(['/AgentAssignedTicketsDash']).then(() => {
           location.reload();
 
         });

@@ -12,6 +12,8 @@ import { CompanySetupComponent } from './company-setup/company-setup.component';
 import { StaffSetupComponent } from './staff-setup/staff-setup.component';
 import { AgentManagerDashboardComponent } from './agent-manager-dashboard/agent-manager-dashboard.component';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
+import { AgentAssignedTicketsDashComponent } from './agent-assigned-tickets-dash/agent-assigned-tickets-dash.component';
+import { AgentAcceptedTicketDashComponent } from './agent-accepted-ticket-dash/agent-accepted-ticket-dash.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { TicketDetailsComponent } from './ticket-details/ticket-details.componen
     CompanySetupComponent,
     StaffSetupComponent,
     AgentManagerDashboardComponent,
-    TicketDetailsComponent
+    TicketDetailsComponent,
+    AgentAssignedTicketsDashComponent,
+    AgentAcceptedTicketDashComponent
   ],
   imports: [
     BrowserModule,

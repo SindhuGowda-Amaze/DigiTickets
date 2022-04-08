@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgentAcceptedTicketDashComponent } from './agent-accepted-ticket-dash/agent-accepted-ticket-dash.component';
+import { AgentAssignedTicketsDashComponent } from './agent-assigned-tickets-dash/agent-assigned-tickets-dash.component';
 import { AgentManagerDashboardComponent } from './agent-manager-dashboard/agent-manager-dashboard.component';
 import { CompanySetupComponent } from './company-setup/company-setup.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path:'StaffSetup',component:StaffSetupComponent},
   {path:'AgentManagerDashboard',component:AgentManagerDashboardComponent},
   {path:'TicketDetails',component:TicketDetailsComponent},
+  {path:'AgentAssignedTicketsDash',component:AgentAssignedTicketsDashComponent},
+  {path:'AgentAcceptedTicket',component:AgentAcceptedTicketDashComponent},
 ];
 
 @NgModule({

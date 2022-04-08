@@ -114,6 +114,19 @@ export class SidebarComponent implements OnInit {
     localStorage.setItem('clickname', 'Daily Reports')
     this.router.navigate(['/DailyReports']);
   }
+
+  public AgentAcceptedTicket() {
+    debugger
+    this.active = 'AgentAcceptedTicket';
+    localStorage.setItem('clickname', 'Accepted Ticket')
+    this.router.navigate(['/AgentAcceptedTicket']);
+  }
   
 
+  public OpenTickets() {
+    debugger
+    this.active = 'OpenTickets';
+    localStorage.setItem('clickname', 'Open Tickets')
+    this.router.navigate(['/AgentAssignedTicketsDash']);
+  }
 }
