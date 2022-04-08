@@ -8,6 +8,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { CompanySetupComponent } from './company-setup/company-setup.component';
+import { StaffSetupComponent } from './staff-setup/staff-setup.component';
+import { AgentManagerDashboardComponent } from './agent-manager-dashboard/agent-manager-dashboard.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { SpinnerComponent } from './spinner/spinner.component';
     SidebarComponent,
     FooterComponent,
     LoginComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    CompanySetupComponent,
+    StaffSetupComponent,
+    AgentManagerDashboardComponent
   ],
   imports: [
     BrowserModule,
