@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { StaffSetupComponent } from './staff-setup/staff-setup.component';
+import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 
 const routes: Routes = [
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'CompanySetup',component:CompanySetupComponent},
   {path:'StaffSetup',component:StaffSetupComponent},
   {path:'AgentManagerDashboard',component:AgentManagerDashboardComponent},
+  {path:'TicketDetails',component:TicketDetailsComponent},
 ];
 
 @NgModule({

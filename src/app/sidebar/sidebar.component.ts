@@ -17,7 +17,7 @@ export class SidebarComponent implements OnInit {
   active: any;
   ngOnInit(): void {
     this.active = 0
-    this.temp = sessionStorage.getItem('temp')
+    this.temp = localStorage.getItem('temp')
     this.roleid = localStorage.getItem('roleid');
     this.company_name = localStorage.getItem("company_name");
     this.UserName = localStorage.getItem('UserName');
@@ -66,11 +66,11 @@ export class SidebarComponent implements OnInit {
     localStorage.setItem('clickname', 'New Installation')
     this.router.navigate(['/NewInstallation']);
   }
-  public leaveelection() {
+  public TicketDetails() {
     debugger
-    this.active = 'leaveelection';
-    localStorage.setItem('clickname', 'Leave Election')
-    this.router.navigate(['/leaveelection']);
+    this.active = 'TicketDetails';
+    localStorage.setItem('clickname', 'TicketDetails')
+    this.router.navigate(['/TicketDetails']);
   }
 
 
@@ -114,5 +114,6 @@ export class SidebarComponent implements OnInit {
     localStorage.setItem('clickname', 'Daily Reports')
     this.router.navigate(['/DailyReports']);
   }
+  
 
 }

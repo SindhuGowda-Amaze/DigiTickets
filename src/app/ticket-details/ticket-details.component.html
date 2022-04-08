@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="Heading1">Ticket </p>
+      
+        </div>
+    </div>
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-1">
+                <p>Filter By</p>
+            </div>
+
+            <div class="col-lg-3">
+                <select class="form-control">
+                    <option>Select Country</option>
+                    <option>South Africa</option>
+                    <option>Singapore</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <select class="form-control">
+                    <option>Select Province</option>
+                    <option>Western Cape</option>
+                    <option>Northern Cape</option>
+                </select>
+            </div>
+        </div> 
+    </div><br>
+    <div class="row">
+        <div class="col-lg-10 ">         
+        </div>
+        <!-- <div class="col-lg-2">
+            <button class="EditBTN" (click)="exportexcel()">Export Excel</button>
+        </div> -->
+        <!-- <div class="col-lg-2">
+            <button class="EditBTN" routerLink="/CustomerReport">Add</button>
+        </div> -->
+    </div> <br>
+
+
+        <div class="row" >
+            <div class="col-lg-12">
+                <table class="table" id="download">
+                    <thead>
+                            <th>Company Logo</th>
+                            <th>Company Name</th>
+                            <th>Distribution No</th>
+                            <th>Branch Name</th>
+                            <th>Contact Person Name</th>
+                            <th>Phone No</th>
+                            <th>EmailID</th>
+                            <th>Address</th>
+                            <th>Postal Code</th>
+                            <th>Country</th>
+                            <th>Province</th>
+                            <th>City</th>
+                            <!-- <th>Reset Password</th> -->
+                            <th style="padding-left: 47px;">Actions</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto"></td>
+                          <td>Amaze Inc</td>
+                          <td>WCP0020454</td>
+                          <td>Branch 1</td>
+                          <td>Anup</td>
+                          <td>91 8792146879</td>
+                          <td>info@amazeincglobal.com</td>
+                          <td>106/D-19, 29th A Cross Rd, 7th Block, Jayanagar, Bengaluru, Karnataka </td>
+                          <td>560070</td>
+                          <td>South Africa</td>
+                          <td>Western Cape</td>
+                          <td>Cape Town</td>
+                          <td> <button class="EditBTN" >Edit</button><br><br>
+                            <button class="DeleteBTN" (click)="delete()">Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+</div>

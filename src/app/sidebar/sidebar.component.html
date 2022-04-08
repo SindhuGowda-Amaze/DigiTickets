@@ -22,12 +22,12 @@
             <span [ngClass]="active == 95 ? 'Active1' : 'Active3'">Staff Setup </span>
         </a>
 
-        <a (click)="customerreport()" *ngIf="roleid=='1'" (click)="highlight($event)">
+        <a (click)="TicketDetails()" *ngIf="roleid=='2'" (click)="highlight($event)">
             <img src="assets/Images/64/Anoncement.png"
-                [ngClass]="active != 96 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+                [ngClass]="active != 'TicketDetails' ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
             <img src="assets/Images/64/Anoncement.png"
-                [ngClass]="active == 96 ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
-            <span [ngClass]="active == 96 ? 'Active1' : 'Active3'"> Import Installation Data</span>
+                [ngClass]="active == 'TicketDetails' ? 'Active1' : 'Active2'" style="width: 13%;  margin-right: 17px;" />
+            <span [ngClass]="active == 'TicketDetails' ? 'Active1' : 'Active3'"> Ticket Details</span>
         </a>
 
         <a (click)="NewInstallation()" *ngIf="roleid=='2'" (click)="highlight($event)">

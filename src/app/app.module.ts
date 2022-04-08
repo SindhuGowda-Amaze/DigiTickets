@@ -11,6 +11,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { CompanySetupComponent } from './company-setup/company-setup.component';
 import { StaffSetupComponent } from './staff-setup/staff-setup.component';
 import { AgentManagerDashboardComponent } from './agent-manager-dashboard/agent-manager-dashboard.component';
+import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AgentManagerDashboardComponent } from './agent-manager-dashboard/agent-
     SpinnerComponent,
     CompanySetupComponent,
     StaffSetupComponent,
-    AgentManagerDashboardComponent
+    AgentManagerDashboardComponent,
+    TicketDetailsComponent
   ],
   imports: [
     BrowserModule,
