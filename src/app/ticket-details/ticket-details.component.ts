@@ -6,12 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ticket-details.component.css']
 })
 export class TicketDetailsComponent implements OnInit {
-
+  viewMode = 'tab1';
   constructor() { }
 
+  roleid:any;
+
   ngOnInit(): void {
+    this.roleid = localStorage.getItem('roleid');
   }
   delete(){
     
   }
+
+
 }

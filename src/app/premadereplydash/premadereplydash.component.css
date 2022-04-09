@@ -121,6 +121,7 @@ ul {
     display: inline-block;
     width: 52px;
     height: 27px;
+    margin-left: 30px;
   }
   
   .switch input { 

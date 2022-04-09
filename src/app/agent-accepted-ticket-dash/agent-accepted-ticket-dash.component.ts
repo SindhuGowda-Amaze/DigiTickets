@@ -9,7 +9,9 @@ export class AgentAcceptedTicketDashComponent implements OnInit {
 
   constructor() { }
 
+  roleid:any;
   ngOnInit(): void {
+    this.roleid = localStorage.getItem('roleid');
   }
 
 }

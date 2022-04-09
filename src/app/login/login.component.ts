@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     if (this.roleid == 1) {
       debugger
       if (this.username == "admin" && this.password == "1") {
-        sessionStorage.setItem("temp", "1")
+        localStorage.setItem("temp", "1")
         localStorage.setItem("roleid", this.roleid)
         localStorage.setItem("loginname", this.username)
 
@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("roleid", this.roleid)
         localStorage.setItem("loginname", this.username)
 
-        this.router.navigate(['/TicketDetails']).then(() => {
+        this.router.navigate(['/AgentManagerDashboard']).then(() => {
           location.reload();
 
         });
@@ -73,7 +73,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("roleid", this.roleid)
         localStorage.setItem("loginname", this.username)
 
-        this.router.navigate(['/CompanySetup']).then(() => {
+        this.router.navigate(['/CustomerDash']).then(() => {
           location.reload();
 
         });

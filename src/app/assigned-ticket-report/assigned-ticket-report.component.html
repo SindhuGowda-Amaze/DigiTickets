@@ -1,0 +1,83 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10">
+            <p class="Heading1">Assigned Tickets Report</p>
+      
+        </div>
+        <div class="col-lg-2">
+            <p class="Heading" style="float: right;">Count : 1</p>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-1">
+                <p>Filter By</p>
+            </div>
+            <div class="col-lg-3">
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-lg-3">
+                <input type="date" class="form-control">
+              </div>
+            <div class="col-lg-4">
+             <input type="search" class="form-control" placeholder="search for ticket No...">
+            </div>
+        </div> 
+    </div><br>
+    <div class="row">
+        <div class="col-lg-10 ">         
+        </div>
+        <div class="col-lg-2">
+            <button class="EditBTN" >Export to excel</button>
+        </div>
+        <!-- <div class="col-lg-2">
+            <button class="EditBTN" routerLink="/CustomerReport">Add</button>
+        </div> -->
+    </div> <br>
+
+
+        <div class="row" >
+            <div class="col-lg-12">
+                <table class="table" id="download">
+                    <thead>
+                        <th>Ticket No</th>
+                        <th *ngIf="roleid==2">Agent Name</th>
+                        
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Priority</th>
+                            <th>Attachment</th>
+                            <th>Raised By</th>
+                            <th>Customer Phone No</th>
+                            <th>Description</th>
+                            <th>Aging</th>
+                            <th>Status</th>
+                          
+                        <tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>121</td>
+                          <td *ngIf="roleid==2">Virat</td>
+                          <td>2nd April 2022</td>
+                          <td>Implementation of Road topping and Tendersure</td>
+                          <td>Road Construction</td>
+                          <td>High</td>
+                          <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto"></td>
+                          <td>Ram</td>
+                          <td>9560070443</td>
+                          <td>Request for proper road Topping</td>
+                          <td>2days</td>
+                          <td>Assigned</td>
+                         
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+</div>
+
+

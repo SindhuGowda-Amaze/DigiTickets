@@ -9,7 +9,8 @@ export class PremadereplydashComponent implements OnInit {
 
   constructor() { }
 
+  roleid:any;
   ngOnInit(): void {
+    this.roleid = localStorage.getItem('roleid');
   }
-
 }

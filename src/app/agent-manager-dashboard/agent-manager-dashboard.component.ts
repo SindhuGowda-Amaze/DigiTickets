@@ -9,7 +9,9 @@ export class AgentManagerDashboardComponent implements OnInit {
 
   constructor() { }
 
+  roleid:any;
   ngOnInit(): void {
+    this.roleid = localStorage.getItem('roleid');
   }
 
 }

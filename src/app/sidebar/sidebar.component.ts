@@ -98,7 +98,7 @@ export class SidebarComponent implements OnInit {
     debugger
     this.active = 'report';
     localStorage.setItem('clickname', 'Report')
-    this.router.navigate(['/Reports']);
+    // this.router.navigate(['/Reports']);
   }
 
   public helptopic() {
@@ -134,6 +134,69 @@ export class SidebarComponent implements OnInit {
     debugger
     this.active = 'OpenTickets';
     localStorage.setItem('clickname', 'Open Tickets')
-    this.router.navigate(['/AgentAssignedTicketsDash']);
+    this.router.navigate(['/TicketDetails']);
   }
+
+  public dashboard() {
+    debugger
+    this.active = 999;
+    localStorage.setItem('clickname', 'Dashboard')
+    this.router.navigate(['/AgentManagerDashboard']);
+  }
+
+  public customerdashboard() {
+    debugger
+    this.active = 998;
+    localStorage.setItem('clickname', 'Dashboard')
+    this.router.navigate(['/CustomerDash']);
+  }
+
+  public load() {
+    debugger
+    this.active = 'load';
+    localStorage.setItem('clickname', 'Staff Loading')
+    this.router.navigate(['/StaffLoading']);
+  }
+
+
+
+
+
+  public ropen() {
+    debugger
+    this.active = 'ropen';
+    localStorage.setItem('clickname', 'Open Report')
+    this.router.navigate(['/OpenTicketReport']);
+  }
+  public rassigned() {
+    debugger
+    this.active = 'rassigned';
+    localStorage.setItem('clickname', 'Assigned Report')
+    this.router.navigate(['/AssignedTicketReport']);
+  }
+  public raccepted() {
+    debugger
+    this.active = 'raccepted';
+    localStorage.setItem('clickname', 'Accepted Report')
+    this.router.navigate(['/AcceptedTicketReport']);
+  }
+  public rresolved() {
+    debugger
+    this.active = 'rresolved';
+    localStorage.setItem('clickname', 'Resolved Report')
+    this.router.navigate(['/ResolvedTicket']);
+  }
+  public roverdue() {
+    debugger
+    this.active = 'roverdue';
+    localStorage.setItem('clickname', 'Overdue Report')
+    this.router.navigate(['/AcceptedTicketReport']);
+  }
+  public rclosed() {
+    debugger
+    this.active = 'rclosed';
+    localStorage.setItem('clickname', 'Closed Report')
+    this.router.navigate(['/ResolvedTicket']);
+  }
+
 }
