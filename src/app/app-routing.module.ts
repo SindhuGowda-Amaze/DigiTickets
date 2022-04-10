@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { HelptopicdashComponent } from './helptopicdash/helptopicdash.component';
 import { LoginComponent } from './login/login.component';
 import { OpenTicketReportComponent } from './open-ticket-report/open-ticket-report.component';
+import { OverdueReportComponent } from './overdue-report/overdue-report.component';
 import { PremadereplydashComponent } from './premadereplydash/premadereplydash.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ResolvedTicketReportComponent } from './resolved-ticket-report/resolved-ticket-report.component';
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path:'AcceptedTicketReport',component:AcceptedTicketReportComponent},
   {path:'ResolvedTicket',component:ResolvedTicketReportComponent},
   {path:'AssignedTicketReport',component:AssignedTicketReportComponent},
+  {path:'OverdueReport',component:OverdueReportComponent},
 
 ];
 

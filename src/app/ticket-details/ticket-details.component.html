@@ -21,8 +21,9 @@
     <div class="row">
         <div class="col-lg-10 ">
         </div>
-        <div class="col-lg-2 tab-slider--container" [ngSwitch]="viewMode"  *ngIf="roleid==2">
-            <button class="EditBTN" data-toggle="modal" data-target="#exampleModal" *ngSwitchCase="'tab1'" id="tab1">Assign All</button>
+        <div class="col-lg-2 tab-slider--container" [ngSwitch]="viewMode" *ngIf="roleid==2">
+            <button class="EditBTN" data-toggle="modal" data-target="#exampleModal" *ngSwitchCase="'tab1'"
+                id="tab1">Assign All</button>
         </div>
         <!-- <div class="col-lg-2">
             <button class="EditBTN" routerLink="/CustomerReport">Add</button>
@@ -38,12 +39,12 @@
                     <li class="tab-slider--trigger" [class.active]="viewMode == 'tab1'" rel="tab1"
                         (click)="viewMode ='tab1'">
                         New (10)</li>
-                    <li class="tab-slider--trigger" [class.active]="viewMode == 'tab2'" rel="tab2"*ngIf="roleid==2"
+                    <li class="tab-slider--trigger" [class.active]="viewMode == 'tab2'" rel="tab2" *ngIf="roleid==2"
                         (click)="viewMode ='tab2'">Assigned (15)</li>
                     <li class="tab-slider--trigger" [class.active]="viewMode == 'tab3'" rel="tab3"
-                        (click)="viewMode ='tab3'">Accepted (12)</li>
+                        (click)="viewMode ='tab3'">Accepted (3)</li>
                     <li class="tab-slider--trigger" [class.active]="viewMode == 'tab4'" rel="tab4"
-                        (click)="viewMode ='tab4'">Resovled (6)</li>
+                        (click)="viewMode ='tab4'">Resovled (1)</li>
                     <li class="tab-slider--trigger" [class.active]="viewMode == 'tab5'" rel="tab5"
                         (click)="viewMode ='tab5'">Overdue (3)</li>
                 </ul>
@@ -84,6 +85,94 @@
                             <tr>
                                 <td><input type="checkbox" class="form control"></td>
                                 <td>121</td>
+                                <td>2nd March 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Ram</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>122</td>
+                                <td>6th March 2022</td>
+                                <td>Refund</td>
+                                <td>Finance</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Vijay</td>
+                                <td>7874574477</td>
+                                <td>Request for Refund</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>123</td>
+                                <td>22nd March 2022</td>
+                                <td>water facility</td>
+                                <td>Water supply Department</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Kiran</td>
+                                <td>9560678857</td>
+                                <td>Request for Water supply</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>124</td>
+                                <td>24th March 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Krishna</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>125</td>
                                 <td>2nd April 2022</td>
                                 <td>Implementation of Road topping and Tendersure</td>
                                 <td>Road Construction</td>
@@ -97,48 +186,15 @@
                                 <td>Open</td>
                                 <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
                                         data-target="#exampleModal">Assign</button><br><br>
-                                    <button class="DeleteBTN" (click)="delete()" >Delete</button>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
                                 </td>
-                                <td *ngIf="roleid==3"> <button class="EditBTN" >Accept</button><br><br>
-                                    <button class="DeleteBTN" >Reject</button>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div *ngSwitchCase="'tab2'" id="tab2">
-                <div class="row">
-                    <div class="col-md-10">
-                     
-                        <!-- <p class="show3res">SHOWING <span>{{staffleaves1.length}}</span> RESULTS</p> -->
-                    </div>
-                    <!-- <div class="col-md-2">
-                            <button class="form-control requestbtn" routerLink="/ApplyOT">Apply</button>
-                        </div> -->
-                </div>
-                <div class="col-lg-12">
-                    <table class="table" id="download">
-                        <thead>
-                            <th>Select All <input type="checkbox" class="form control"></th>
-                            <th>Ticket No</th>
-                            <th>Date</th>
-                            <th>Subject</th>
-                            <th>Department</th>
-                            <th>Priority</th>
-                            <th>Attachment</th>
-                            <th>Raised By</th>
-                            <th>Customer Phone No</th>
-                            <th>Description</th>
-                            <th *ngIf="roleid==3">Aging</th>
-                            <th>Status</th>
-                            <th style="padding-left: 47px;">Actions</th>
-                            <tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <td><input type="checkbox" class="form control"></td>
-                                <td>121</td>
+                                <td>126</td>
                                 <td>2nd April 2022</td>
                                 <td>Implementation of Road topping and Tendersure</td>
                                 <td>Road Construction</td>
@@ -150,11 +206,221 @@
                                 <td>Request for proper road Topping</td>
                                 <th *ngIf="roleid==3">2 days</th>
                                 <td>Open</td>
-                                <td> <button class="EditBTN" data-toggle="modal"
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
                                         data-target="#exampleModal">Assign</button><br><br>
                                     <button class="DeleteBTN" (click)="delete()">Delete</button>
                                 </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
                             </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>127</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Ram</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>128</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Ram</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="form control"></td>
+                                <td>129</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Ram</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Open</td>
+                                <td *ngIf="roleid==2"> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td>
+                                <td *ngIf="roleid==3"> <button class="EditBTN">Accept</button><br><br>
+                                    <button class="DeleteBTN">Reject</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div *ngSwitchCase="'tab2'" id="tab2">
+                <div class="row">
+                    <div class="col-md-10">
+
+                        <!-- <p class="show3res">SHOWING <span>{{staffleaves1.length}}</span> RESULTS</p> -->
+                    </div>
+                    <!-- <div class="col-md-2">
+                            <button class="form-control requestbtn" routerLink="/ApplyOT">Apply</button>
+                        </div> -->
+                </div>
+                <div class="col-lg-12">
+                    <table class="table" id="download">
+                        <thead>
+                          
+
+                            <th>Ticket No</th>
+                            <th>Agent Name</th>
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Priority</th>
+                            <th>Attachment</th>
+                            <th>Raised By</th>
+                            <th>Customer Phone No</th>
+                            <th>Description</th>
+                            <th *ngIf="roleid==3">Aging</th>
+                            <th>Status</th>
+                            <!-- <th style="padding-left: 47px;">Actions</th> -->
+                            <tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               
+                                <td>131</td>
+                                <td>Pramodh</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Roshan</td>
+                                <td>987598433</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Assigned</td>
+                                <!-- <td> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td> -->
+                            </tr>
+                            <tr>
+                               
+                                <td>132</td>
+                                <td>Pramodh</td>
+                                <td>22nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Kishor</td>
+                                <td>9743474373</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Assigned</td>
+                                <!-- <td> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td> -->
+                            </tr>
+
+                            <tr>
+                               
+                                <td>133</td>
+                                <td>Mohamadh</td>
+                                <td>10th April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>Medium</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Riya</td>
+                                <td>95600706565</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Assigned</td>
+                                <!-- <td> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td> -->
+                            </tr>
+
+                            <tr>
+                               
+                                <td>134</td>
+                                <td>Pramodh</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Sudarshan</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Assigned</td>
+                                <!-- <td> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td> -->
+                            </tr>
+
+                            <tr>
+                               
+                                <td>135</td>
+                                <td>Pramodh</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Sunil</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <th *ngIf="roleid==3">2 days</th>
+                                <td>Assigned</td>
+                                <!-- <td> <button class="EditBTN" data-toggle="modal"
+                                        data-target="#exampleModal">Assign</button><br><br>
+                                    <button class="DeleteBTN" (click)="delete()">Delete</button>
+                                </td> -->
+                            </tr>
+
+
                         </tbody>
                     </table>
                 </div>
@@ -171,38 +437,71 @@
                 <div class="col-lg-12">
                     <table class="table" id="download">
                         <thead>
-                          
-                                <th>Ticket No</th>
-                                <th>Date</th>
-                                <th>Subject</th>
-                                <th>Department</th>
-                                <th>Priority</th>
-                                <th>Attachment</th>
-                                <th>Raised By</th>
-                                <th>Customer Phone No</th>
-                                <th>Description</th>
-                                <th>Aging</th>
-                                <th>Status</th>
-                                <th style="padding-left: 47px;">Actions</th>
+
+                            <th>Ticket No</th>
+                            <th>Agent Name</th>
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Priority</th>
+                            <th>Attachment</th>
+                            <th>Raised By</th>
+                            <th>Customer Phone No</th>
+                            <th>Description</th>
+                            <th>Aging</th>
+                            <th>Status</th>
+                         
                             <tr>
                         </thead>
                         <tbody>
-                          <tr>
-                              <td>121</td>
-                              <td>2nd April 2022</td>
-                              <td>Implementation of Road topping and Tendersure</td>
-                              <td>Road Construction</td>
-                              <td>High</td>
-                              <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto"></td>
-                              <td>Ram</td>
-                              <td>9560070443</td>
-                              <td>Request for proper road Topping</td>
-                              <td>2days</td>
-                              <td>Accepted</td>
-                              <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal3">Resolved</button><br><br>
-                                <button class="DeleteBTN"  data-toggle="modal" data-target="#exampleModal4">Queries</button>
-                            </td>
-                          </tr>
+                            <tr>
+                                <td>141</td>
+                                <td>Rudra</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Vishal</td>
+                                <td>956089878</td>
+                                <td>Request for proper road Topping</td>
+                                <td>2days</td>
+                                <td>Accepted</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>142</td>
+                                <td>Virat</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Vidya</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <td>2days</td>
+                                <td>Accepted</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>143</td>
+                                <td>Pramodh</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Vishal</td>
+                                <td>9560070789</td>
+                                <td>Request for proper road Topping</td>
+                                <td>2days</td>
+                                <td>Accepted</td>
+                               
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -219,40 +518,41 @@
                 <div class="col-lg-12">
                     <table class="table" id="download">
                         <thead>
-                          
-                                <th>Ticket No</th>
-                                <th>Date</th>
-                                <th>Subject</th>
-                                <th>Department</th>
-                                <th>Priority</th>
-                                <th>Attachment</th>
-                                <th>Raised By</th>
-                                <th>Customer Phone No</th>
-                                <th>Description</th>
-                                <th>Resolved By</th>
-                                <th>Resolve Comments</th>
-                                <th>Status</th>
-                                <!-- <th style="padding-left: 47px;">Actions</th> -->
+
+                            <th>Ticket No</th>
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Priority</th>
+                            <th>Attachment</th>
+                            <th>Raised By</th>
+                            <th>Customer Phone No</th>
+                            <th>Description</th>
+                            <th>Resolved By</th>
+                            <th>Resolve Comments</th>
+                            <th>Status</th>
+                            <!-- <th style="padding-left: 47px;">Actions</th> -->
                             <tr>
                         </thead>
                         <tbody>
-                          <tr>
-                              <td>121</td>
-                              <td>2nd April 2022</td>
-                              <td>Implementation of Road topping and Tendersure</td>
-                              <td>Road Construction</td>
-                              <td>High</td>
-                              <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto"></td>
-                              <td>Ram</td>
-                              <td>9560070443</td>
-                              <td>Request for proper road Topping</td>
-                              <td>Maxwell</td>
-                              <td>The issue has been taken care</td>
-                              <td>Closed</td>
-                              <!-- <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Resolved</button><br><br>
+                            <tr>
+                                <td>121</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Ram</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <td>Maxwell</td>
+                                <td>The issue has been taken care</td>
+                                <td>Closed</td>
+                                <!-- <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal">Resolved</button><br><br>
                                 <button class="DeleteBTN"  data-toggle="modal" data-target="#exampleModal1">Queries</button>
                             </td> -->
-                          </tr>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -269,38 +569,71 @@
                 <div class="col-lg-12">
                     <table class="table" id="download">
                         <thead>
-                          
-                                <th>Ticket No</th>
-                                <th>Date</th>
-                                <th>Subject</th>
-                                <th>Department</th>
-                                <th>Priority</th>
-                                <th>Attachment</th>
-                                <th>Raised By</th>
-                                <th>Customer Phone No</th>
-                                <th>Description</th>
-                                <th>Aging</th>
-                                <th>Status</th>
-                                <th style="padding-left: 47px;">Actions</th>
+
+                            <th>Ticket No</th>
+                            <th>Agent Name</th>
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Priority</th>
+                            <th>Attachment</th>
+                            <th>Raised By</th>
+                            <th>Customer Phone No</th>
+                            <th>Description</th>
+                            <th>Aging</th>
+                            <th>Status</th>
+                           
                             <tr>
                         </thead>
                         <tbody>
-                          <tr>
-                              <td>121</td>
-                              <td>2nd April 2022</td>
-                              <td>Implementation of Road topping and Tendersure</td>
-                              <td>Road Construction</td>
-                              <td>High</td>
-                              <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto"></td>
-                              <td>Ram</td>
-                              <td>9560070443</td>
-                              <td>Request for proper road Topping</td>
-                              <td style="color: red;">7days</td>
-                              <td>Accepted</td>
-                              <td> <button class="EditBTN" data-toggle="modal" data-target="#exampleModal3">Resolved</button><br><br>
-                                <button class="DeleteBTN"  data-toggle="modal" data-target="#exampleModal4">Queries</button>
-                            </td>
-                          </tr>
+                            <tr>
+                                <td>151</td>
+                                <td>Virat</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Ram</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <td style="color: red;">7days</td>
+                                <td>Accepted</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>151</td>
+                                <td>Virat</td>
+                                <td>2nd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Mahima</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <td style="color: red;">7days</td>
+                                <td>Accepted</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>151</td>
+                                <td>Virat</td>
+                                <td>3rd April 2022</td>
+                                <td>Implementation of Road topping and Tendersure</td>
+                                <td>Road Construction</td>
+                                <td>High</td>
+                                <td><img src="assets/Images/Logo_digiOffice_Colored.png" width="100%" height="auto">
+                                </td>
+                                <td>Mohan</td>
+                                <td>9560070443</td>
+                                <td>Request for proper road Topping</td>
+                                <td style="color: red;">9days</td>
+                                <td>Accepted</td>
+                               
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -373,13 +706,13 @@
                         <p>Comments </p>
                     </div>
                     <div class="col-lg-6">
-                       <textarea class="form-control" rows="5">write here..</textarea>
+                        <textarea class="form-control" rows="5">write here..</textarea>
                     </div>
                 </div><br>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" >Resolve Ticket</button>
+                <button type="button" class="btn btn-primary">Resolve Ticket</button>
             </div>
         </div>
     </div>
@@ -401,21 +734,20 @@
                         <p>Pre-made Reply</p>
                     </div>
                     <div class="col-lg-6">
-                       <select class="form-control">
-                           <option>Select One</option>
-                           <option>Provide your Contact Number</option>
-                           <option>Provoid your Address</option>
-                           <option>Provide your Locality Details</option>
-                           <option>Provide more Information</option>
-                       </select>
+                        <select class="form-control">
+                            <option>Select One</option>
+                            <option>Provide your Contact Number</option>
+                            <option>Provoid your Address</option>
+                            <option>Provide your Locality Details</option>
+                            <option>Provide more Information</option>
+                        </select>
                     </div>
                 </div><br>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" >Send</button>
+                <button type="button" class="btn btn-primary">Send</button>
             </div>
         </div>
     </div>
 </div>
-

@@ -24,6 +24,7 @@ import { OpenTicketReportComponent } from './open-ticket-report/open-ticket-repo
 import { AcceptedTicketReportComponent } from './accepted-ticket-report/accepted-ticket-report.component';
 import { ResolvedTicketReportComponent } from './resolved-ticket-report/resolved-ticket-report.component';
 import { AssignedTicketReportComponent } from './assigned-ticket-report/assigned-ticket-report.component';
+import { OverdueReportComponent } from './overdue-report/overdue-report.component';
 
 
 
@@ -52,7 +53,8 @@ import { AssignedTicketReportComponent } from './assigned-ticket-report/assigned
     OpenTicketReportComponent,
     AcceptedTicketReportComponent,
     ResolvedTicketReportComponent,
-    AssignedTicketReportComponent
+    AssignedTicketReportComponent,
+    OverdueReportComponent
   ],
   imports: [
     BrowserModule,

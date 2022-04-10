@@ -190,7 +190,7 @@ export class SidebarComponent implements OnInit {
     debugger
     this.active = 'roverdue';
     localStorage.setItem('clickname', 'Overdue Report')
-    this.router.navigate(['/AcceptedTicketReport']);
+    this.router.navigate(['/OverdueReport']);
   }
   public rclosed() {
     debugger

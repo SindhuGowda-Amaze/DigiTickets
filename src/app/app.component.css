@@ -17,6 +17,11 @@ ul {
     font-family: 'DIN Bold';
     color: white
   }
+
+  .body{
+    height: auto;
+    width: 100%;
+  }
   
   h6 {
     font-family: 'Poppins';
