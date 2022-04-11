@@ -25,9 +25,9 @@ export class LoginComponent implements OnInit {
     if (this.roleid == 1) {
       debugger
       if (this.username == "admin" && this.password == "1") {
-        localStorage.setItem("temp", "1")
-        localStorage.setItem("roleid", this.roleid)
-        localStorage.setItem("loginname", this.username)
+        sessionStorage.setItem("temp", "1")
+        sessionStorage.setItem("roleid", this.roleid)
+        sessionStorage.setItem("loginname", this.username)
 
         this.router.navigate(['/CompanySetup']).then(() => {
           location.reload();
@@ -41,9 +41,9 @@ export class LoginComponent implements OnInit {
     else if (this.roleid == 2) {
       debugger
       if (this.username == "manager" && this.password == "123") {
-        localStorage.setItem("temp", "1")
-        localStorage.setItem("roleid", this.roleid)
-        localStorage.setItem("loginname", this.username)
+        sessionStorage.setItem("temp", "1")
+        sessionStorage.setItem("roleid", this.roleid)
+        sessionStorage.setItem("loginname", this.username)
 
         this.router.navigate(['/AgentManagerDashboard']).then(() => {
           location.reload();
@@ -55,9 +55,9 @@ export class LoginComponent implements OnInit {
     else if (this.roleid == 3) {
       debugger
       if (this.username == "agent" && this.password == "welcome") {
-        localStorage.setItem("temp", "1")
-        localStorage.setItem("roleid", this.roleid)
-        localStorage.setItem("loginname", this.username)
+        sessionStorage.setItem("temp", "1")
+        sessionStorage.setItem("roleid", this.roleid)
+        sessionStorage.setItem("loginname", this.username)
 
         this.router.navigate(['/AgentManagerDashboard']).then(() => {
           location.reload();
@@ -69,9 +69,9 @@ export class LoginComponent implements OnInit {
     else if (this.roleid == 4) {
       debugger
       if (this.username == "customer" && this.password == "welcome") {
-        localStorage.setItem("temp", "1")
-        localStorage.setItem("roleid", this.roleid)
-        localStorage.setItem("loginname", this.username)
+        sessionStorage.setItem("temp", "1")
+        sessionStorage.setItem("roleid", this.roleid)
+        sessionStorage.setItem("loginname", this.username)
 
         this.router.navigate(['/CustomerDash']).then(() => {
           location.reload();

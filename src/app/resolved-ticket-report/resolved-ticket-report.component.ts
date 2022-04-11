@@ -12,6 +12,6 @@ export class ResolvedTicketReportComponent implements OnInit {
   roleid:any;
 
   ngOnInit(): void {
-    this.roleid = localStorage.getItem('roleid');
+    this.roleid = sessionStorage.getItem('roleid');
   }
 }

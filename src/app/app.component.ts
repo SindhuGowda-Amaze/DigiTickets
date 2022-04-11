@@ -26,8 +26,8 @@ export class AppComponent {
   temp1: any;loginname:any;
   ngOnInit(): void {
     interval(1000).subscribe((x => {
-      this.pagename = localStorage.getItem('Pagename')
-      this.loginname = localStorage.getItem('loginname')
+      this.pagename = sessionStorage.getItem('Pagename')
+      this.loginname = sessionStorage.getItem('loginname')
     }));
 
     setInterval(() => {
@@ -76,6 +76,7 @@ export class AppComponent {
     debugger
     // this.loader = true;
     localStorage.setItem('roledid', "0");
+    sessionStorage.setItem('roledid', "0");
     this.router.navigate(['/Login']).then(() => {
 
       location.reload();
@@ -87,6 +88,7 @@ export class AppComponent {
 
   public Clearstorge() {
     localStorage.setItem('temp', '0');
+    sessionStorage.setItem('temp', '0');
     location.reload();
   }
 

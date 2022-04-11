@@ -30,6 +30,7 @@ import { OverdueReportComponent } from './overdue-report/overdue-report.componen
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,12 +55,14 @@ import { OverdueReportComponent } from './overdue-report/overdue-report.componen
     AcceptedTicketReportComponent,
     ResolvedTicketReportComponent,
     AssignedTicketReportComponent,
-    OverdueReportComponent
+    OverdueReportComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+ 
 
  
   ],

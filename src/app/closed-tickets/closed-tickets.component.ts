@@ -10,7 +10,7 @@ export class ClosedTicketsComponent implements OnInit {
   constructor() { }
   roleid:any;
   ngOnInit(): void {
-    this.roleid = localStorage.getItem('roleid');
+    this.roleid = sessionStorage.getItem('roleid');
   }
 
 

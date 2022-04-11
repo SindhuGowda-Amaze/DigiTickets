@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
   temp: any;
   ngOnInit(): void {
-    this.temp = localStorage.getItem('temp')
+    this.temp = sessionStorage.getItem('temp')
   }
 
 }

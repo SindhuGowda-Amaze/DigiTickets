@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
 
     this.temp = sessionStorage.getItem('temp');
-    this.temp5 = localStorage.getItem('temp');
+    this.temp5 = sessionStorage.getItem('temp');
     this.roleid = sessionStorage.getItem('roleid');
     this.company_name = sessionStorage.getItem("company_name");
     this.UserName = sessionStorage.getItem('UserName');
